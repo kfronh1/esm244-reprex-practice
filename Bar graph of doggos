@@ -1,0 +1,16 @@
+``` r
+library(tidyverse)
+
+
+df <- tribble(~name, ~weight, ~height,
+              "teddy", 52, 0.5,
+              "khora", 60, 0.6,
+              "waffle", 28, 0.4)
+
+ggplot(data = df, aes(x = height, y = weight, fill = name)) +
+  geom_col()
+```
+
+![](https://i.imgur.com/l8rmwaY.png)
+
+<sup>Created on 2021-02-11 by the [reprex package](https://reprex.tidyverse.org) (v1.0.0)</sup>
